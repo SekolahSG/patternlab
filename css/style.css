@@ -60,6 +60,7 @@ header, footer, nav, section, article, hgroup, figure {
 h1, h2, h3, h4, h5, h6 {
   white-space: normal;
   max-width: 80%;
+  font-weight: normal;
 }
 
 /*------------------------------------*\
@@ -165,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background: white;
-  font: 100%/1.5 "Lato", "Helvetica", "Arial", sans-serif;
+  font: 100%/1.5 "neuzeit-grotesk", "futura", sans-serif;
   -webkit-text-size-adjust: 100%;
   color: #333333;
 }
@@ -177,7 +178,7 @@ a {
   outline: 0;
 }
 a:hover, a:focus {
-  color: gray;
+  color: #F22613;
 }
 
 /* Headings */
@@ -200,10 +201,11 @@ a:hover, a:focus {
 }
 
 /* Define headings and their associated classes here. */
+
 h1,.alpha{
     font-size:48px;
     font-size:3rem;     /* 48px */
-    line-height:1.2;    /* 57.6px */
+    line-height:1.25;    /* 57.6px */
 }
 h2,.beta{
     font-size:36px;
@@ -226,8 +228,8 @@ h5,.epsilon{
     line-height:1.2;    /* 19.2px */
 }
 h6,.zeta{
-    font-size:16px;
-    font-size:1rem;     /* 16px */
+    font-size:14px;
+    font-size:0.875;     /* 16px */
     line-height:1.2;    /* 19.2px */
 }
 
@@ -240,34 +242,41 @@ small,.milli {
 
 /* Subheadings */
 .subheading {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: "nimbus-sans", "Helvetica", "Arial", sans-serif;
   font-weight: normal;
 }
 
 /* Text-Related Elements */
 p {
   margin-bottom: 1rem;
+  font-weight: 300;
+  font-family: "nimbus-sans", "Helvetica", "Arial", sans-serif;
+  line-height: 1.38;
 }
+
+p.light { font-weight: 300; }
+p.neuzeit { font-weight: normal; }
 
 /* Blockquote */
 blockquote {
   /*font-style: italic;*/
   border-left: 4px solid #F22613;
-  color: #000000;
   padding-left: 1rem;
   margin-bottom: 1rem;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
-  font-weight: bold;
   // extend .delta
 }
+
+/*blockquote p {
+  font-weight: bold;
+}*/
 
 blockquote cite {
   font-size: 16px;
   line-height: 1.2;
 
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
 }
 
 /* Horizontal Rule */
@@ -281,12 +290,25 @@ hr {
 abbr {
   border-bottom: 1px dotted gray;
   cursor: help;
+  color: #F22613;
 }
 
-ol, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+mark {
+  background-color: #F22613;
+  color: white;
+}
+
+.footnotes ol {
+  font-style: italic;
+  font-size:12px;
+  font-size:0.75rem;  /* 12px */
+  line-height:2;      /* 24px */
+  list-style: decimal;
+  padding: 0 0 0 10px;
+}
+
+.footnotes ol > li:before {
+  content: none;
 }
 
 /* Definition Lists */
@@ -345,10 +367,10 @@ fieldset {
   margin: 0;
 }
 
-label {
+/*label {
   display: block;
   padding-bottom: 0.25rem;
-}
+}*/
 
 button, input, select, textarea {
   font-family: inherit;
@@ -359,7 +381,8 @@ button, input, select, textarea {
 input, textarea {
   width: 100%;
   border: 1px solid gray;
-  padding: 0.5rem 0.65rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 20px;
 }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
@@ -381,12 +404,66 @@ input[type="radio"] {
 
 input[type="search"] {
   -webkit-appearance: none;
-  border-radius: 0;
+  /*border-radius: 0;*/
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+
+
+.checkbox label, .radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 15px;
+}
+
+.checkbox label:before, .radio label:before {
+	content: "";
+	display: inline-block;
+
+	width: 16px;
+	height: 16px;
+
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 4px;
+  border: 1px solid gray;
+}
+
+.radio label:before {
+	border-radius: 8px;
+}
+.checkbox label:before {
+    border-radius: 3px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #F22613;
+    font-size: 24px;
+    text-align: center;
+    line-height: 17px;
+    border: 1px solid #F22613;
+}
+
+input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+	color: #F22613;
+	text-align: center;
+  line-height: 15px;
+  border: 1px solid #F22613;
 }
 
 .field-container {
@@ -431,8 +508,16 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /* Validation */
-.has-error {
-  border-color: red;
+input.is-error, .has-error {
+  border: 1px solid #F22613;
+}
+
+.is-error::-webkit-input-placeholder {
+  color: #F22613;
+}
+
+.is-valid::-webkit-input-placeholder {
+  color: #089e00;
 }
 
 .is-valid {
@@ -463,17 +548,25 @@ table {
   border-spacing: 0;
   border: 1px solid gray;
   width: 100%;
+  border: none;
 }
 
 th {
   text-align: left;
-  border: 1px solid gray;
-  padding: 0.2em;
+  padding: 10px;
+  border: none;
+  border-top: 2px solid #F22613;
+  border-bottom: 2px solid #F22613;
+  color: #F22613;
+  font-family: "neuzeit-grotesk", "futura", sans-serif;
 }
 
 td {
-  border: 1px solid gray;
-  padding: 0.2em;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #BFBFBF;
+  border-bottom: 1px solid #BFBFBF;
+  font-family: "nimbus-sans", "Helvetica", "Arial", sans-serif;
 }
 
 .animate-fade {
@@ -620,6 +713,25 @@ td {
   }
   .g-4up > .gi:nth-of-type(4n+1) {
     clear: left;
+  }
+}
+
+/* Grid 5up */
+@media all and (min-width: 46.8em) {
+  .g-5up > .gi {
+    float: left;
+    width: 50%;
+  }
+  .g-5up > .gi:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+@media all and (min-width: 50em) {
+  .g-5up > .gi {
+    width: 20%;
+  }
+  .g-5up > .gi:nth-of-type(2n+1) {
+    clear: none;
   }
 }
 
@@ -872,20 +984,14 @@ td {
     $LIST Styles
 \*------------------------------------*/
 /* General List Styling */
-ul, ol {
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-ul ul, ol ol {
+
+
+/*ul ul, ol ol {
   margin-bottom: 0;
 }
 ul li, ol li {
   counter-increment: step-counter;
-  padding: 20px 0;
+  padding: 0 0 10px 0;
 }
 ul > li:before, ol > li:before {
   margin-right: 5px;
@@ -898,7 +1004,51 @@ ol > li:before {
 ul > li:before {
   content: "";
   margin-right: 30px;
+}*/
+
+.text ul, .text ol {
+  margin: 0;
+  padding: 0;
 }
+
+.text ul > li, .text ol > li {
+  position:relative; /* Create a positioning context */
+  margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+  padding:1px 4px 0; /* Add some spacing around the content */
+}
+
+.text ul {
+  list-style-image: url(../images/bullet.svg)
+}
+
+.text ol {
+  counter-reset:li; /* Initiate a counter */
+  list-style:none; /* Disable the normal item numbering */
+}
+
+.text ol > li:before {
+  content:counter(li, decimal-leading-zero) "."; /* Use the counter as content */
+  counter-increment:li; /* Increment the counter by 1 */
+  /* Position and style the number */
+  position:absolute;
+  top:-2px;
+  left:-2em;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  width:2em;
+  /* Some space between the number and the content in browsers that support
+  generated content but not positioning it (Camino 2 is one example) */
+  margin-right:6px;
+  padding:0 4px;
+  border-top:2px solid transparent;
+  color:red;
+  text-align:center;
+}
+.text li ol,
+.text li ul {margin-top:6px;}
+.text ol ol li:last-child {margin-bottom:0;}
+
 
 /* Alternative List Styling */
 .main > ol, .main > ul {
@@ -906,6 +1056,8 @@ ul > li:before {
 }
 .main > ol > li, .main > ul > li {
   border-bottom: 1px solid red;
+  padding: 20px;
+  padding-left: 0;
 }
 .main > ol > li:first-child, .main > ul > li:first-child {
   border-top: 1px solid red;
@@ -916,7 +1068,7 @@ ul > li:before {
 \*------------------------------------*/
 /* Global Font Classes */
 .font-secondary {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: "nimbus-sans", "Helvetica", "Arial", sans-serif;
 }
 
 .intro {
@@ -925,21 +1077,21 @@ ul > li:before {
 }
 
 .pullquote {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: "nimbus-sans", "Helvetica", "Arial", sans-serif;
   font-size: 1.4375em;
 }
 
 .text .lead {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .text a {
   text-decoration: none;
   color: #F22613;
-  font-weight: bold;
 }
 .text a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color:#BFBFBF;
 }
 .caption, time {
   font-size: 18px;
@@ -992,6 +1144,18 @@ ul > li:before {
   font-family: 'icons';
   src: url("../fonts/icons.eot");
   src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sekolahsg';
+  src: url('../fonts/sekolahsg.eot?61678460');
+  src: url('../fonts/sekolahsg.eot?61678460#iefix') format('embedded-opentype'),
+       url('../fonts/sekolahsg.woff2?61678460') format('woff2'),
+       url('../fonts/sekolahsg.woff?61678460') format('woff'),
+       url('../fonts/sekolahsg.ttf?61678460') format('truetype'),
+       url('../fonts/sekolahsg.svg?61678460#sekolahsg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1129,25 +1293,82 @@ ul > li:before {
   margin-right: 0.5rem;
 }
 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+ font-family: "sekolahsg";
+ font-style: normal;
+ font-weight: normal;
+ speak: none;
+
+ display: inline-block;
+ text-decoration: inherit;
+ width: 1em;
+ margin-right: .2em;
+ text-align: center;
+ /* opacity: .8; */
+
+ /* For safety - reset parent styles, that can break glyph codes*/
+ font-variant: normal;
+ text-transform: none;
+
+ /* fix buttons height, for twitter bootstrap */
+ line-height: 1em;
+
+ /* Animation center compensation - margins should be symmetric */
+ /* remove if not needed */
+ margin-left: .2em;
+
+ /* you can be more comfortable with increased icons size */
+ /* font-size: 120%; */
+
+ /* Font smoothing. That was taken from TWBS */
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+
+ /* Uncomment for 3D effect */
+ /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-instagram:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\e802'; } /* '' */
+
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
 .btn {
   display: inline-block;
-  background: #333333;
+  background: #444;
   color: white;
   line-height: 1;
-  font-weight: bold;
-  padding: 1rem;
+  padding: 13px;
   border: 0;
   text-align: center;
+  text-transform: uppercase;
+  font-family: "neuzeit-grotesk", "futura", sans-serif;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  border: 1px solid #444;
+}
+.btn.alt {
+  background: #F22613;
+  border: 1px solid #F22613;
 }
 .btn:hover, .btn:focus {
-  color: white;
+  color: #444;
+  background: transparent;
+}
+.alt:hover {
+  color: #F22613;
+  border: 1px solid #F22613;
 }
 .btn.disabled {
   background: #eeeeee;
   color: #bbbbbb;
+}
+.btn.disabled {
+  background: #eeeeee;
+  color: #bbbbbb;
+  border: none !important;
 }
 
 .btn-small {
@@ -1163,7 +1384,8 @@ ul > li:before {
 }
 
 .text-btn {
-  font-style: italic;
+  font-family: "neuzeit-grotesk", "futura", sans-serif;
+  color: #F22613;
 }
 
 /* Generic Placeholder Brick: REMOVE FOR PRODUCTION */
@@ -1185,6 +1407,7 @@ ul > li:before {
 
 .headline {
   line-height: 1.2;
+  max-width: 100%;
 }
 
 /* Hero Block */
@@ -1194,18 +1417,19 @@ ul > li:before {
 .block-hero .b-thumb img {
   display: block;
 }
+.block-hero .b-text h2 { max-width: 100%; }
 @media all and (min-width: 50em) {
   .block-hero {
     position: relative;
   }
   .block-hero .b-text {
     position: absolute;
-    bottom: 0;
+    bottom: 35%;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -1220,12 +1444,15 @@ ul > li:before {
   vertical-align: top;
   overflow: hidden;
 }
+.block-thumb .b-thumb {
+  position: relative;
+}
 @media all and (min-width: 29.75em) {
   .block-thumb .b-thumb {
     display: table-cell;
     vertical-align: top;
     width: 30%;
-    max-width: 10em;
+    min-width: 21em;
   }
   .block-thumb .b-thumb img {
     display: block;
@@ -1235,9 +1462,11 @@ ul > li:before {
 }
 @media all and (min-width: 29.75em) {
   .block-thumb .b-text {
-    display: table-cell;
-    width: 70%;
+    width: 100%;
     padding: 0 1rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
   }
 }
 
@@ -1264,18 +1493,18 @@ ul > li:before {
   margin-bottom: 0.5rem;
   position: relative;
 }
-.block-inset .headline {
-  font-size: 1.1em;
-}
 .block-inset .b-text {
   position: absolute;
-  bottom: 0;
+  bottom: 50%;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0.5);*/
   color: white;
   padding: 0.5rem;
+  text-align: center;
+  font-size:
 }
+.block-inset .b-text h2 { max-width: 100%;}
 
 /* Block Thumb with Summary */
 .block-thumb-summary .b-thumb {
@@ -1289,6 +1518,7 @@ ul > li:before {
 
 .inline-list li {
   display: inline-block;
+  margin: 0;
 }
 
 /* Social List */
@@ -1387,7 +1617,7 @@ ul > li:before {
 .acc-handle {
   background: #131313;
   color: white;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: "nimbus-sans", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   display: block;
   position: relative;
@@ -1451,8 +1681,11 @@ ul > li:before {
 
 .byline {
   font-size: 0.875em;
-  font-style: italic;
+  /*font-style: italic;*/
   margin-bottom: 0.5rem;
+  text-transform: uppercase;;
+  letter-spacing: 2px;
+  color: #888888;
 }
 
 /* Wordpress Caption */
@@ -1526,4 +1759,50 @@ ul > li:before {
 	color: #F00;
 	border-color: #F00;
 	background: #ffbebe;
+}
+
+/* CAROUSEL */
+.carousel-list-carousel { position: relative; }
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.carousel-controls .carousel-next {
+  position: absolute;
+  right: 0;
+}
+
+/* SCHOOL */
+/*#school section { margin-top: 6rem; }*/
+#school section { margin: 8rem 0; }
+#school section:first-child { margin-top: 4rem; }
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  max-width: 100%;
+}
+
+/*split*/
+.split .gi { text-align: right; }
+.split .gi:nth-of-type(even) { text-align: left; }
+
+/*subnav*/
+.subnav .gi {
+  text-align: center;
+}
+
+/*glance*/
+.glance .glance-content { margin-top: 2rem; }
+
+/*about*/
+.about .tags .gi { text-align: center; }
+
+/*uplink*/
+.uplink {
+  display: block;
+  text-align: right;
 }

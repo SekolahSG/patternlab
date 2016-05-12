@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
     <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+    <script src="https://use.typekit.net/yzv7nrv.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -34,7 +36,8 @@
             <div class="sg-pattern-body">
               <!-- Begin .header -->
 <header class="header cf" role="banner">
-	<a href="/"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>
+	<a href="/"><img src="..&#x2F;..&#x2F;images&#x2F;logo.svg" class="logo" alt="Rectangle" /></a>
+
 	<a href="#" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
 	<a href="#" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
 	<nav id="nav" class="nav">
@@ -66,7 +69,8 @@
                   <code>
                     &lt;!-- Begin .header --&gt;
 &lt;header class&#x3D;&quot;header cf&quot; role&#x3D;&quot;banner&quot;&gt;
-	&lt;a href&#x3D;&quot;&#x2F;&quot;&gt;&lt;img src&#x3D;&quot;..&#x2F;..&#x2F;images&#x2F;logo.png&quot; class&#x3D;&quot;logo&quot; alt&#x3D;&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+	&lt;a href&#x3D;&quot;&#x2F;&quot;&gt;&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;logo.svg&quot; class&#x3D;&quot;logo&quot; alt&#x3D;&quot;Rectangle&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+
 	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class&#x3D;&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
 	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class&#x3D;&quot;is-vishidden&quot;&gt;Menu&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
 	&lt;nav id&#x3D;&quot;nav&quot; class&#x3D;&quot;nav&quot;&gt;
@@ -132,7 +136,8 @@
 
 <p><a href="#">Aliquam erat volutpat.</a> Mauris vulputate scelerisque feugiat. Cras a erat a diam venenatis aliquam. Sed tempus, purus ac pretium varius, risus orci sagittis purus, quis auctor libero magna nec magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas eros dolor, rutrum eu sollicitudin eu, commodo at leo. Suspendisse potenti. Sed eu nibh sit amet quam auctor feugiat vel et risus. Maecenas eu urna adipiscing neque dictum mollis suscipit in augue. Praesent pulvinar condimentum sagittis. Maecenas laoreet neque non eros consectetur fringilla. Donec vitae risus leo, vitae pharetra ipsum. Sed placerat eros eget elit iaculis semper. Aliquam congue blandit orci ac pretium.</p>
 
-<img src="..&#x2F;..&#x2F;images&#x2F;fpo_16x9.png" alt="16x9 Image" /> 
+<img src="..&#x2F;..&#x2F;images&#x2F;fpo_16x9.png" alt="16x9 Image" width="100%" />
+ 
 
 <p>Aliquam ultrices cursus mauris, eget volutpat justo mattis nec. Sed a orci turpis. Aliquam aliquet placerat dui, consectetur tincidunt leo tristique et. Vivamus enim nisi, blandit a venenatis quis, convallis et arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris libero sapien, placerat in sodales eu, tempor quis dui. Vivamus egestas faucibus pulvinar. Maecenas eget diam nunc. Phasellus at sem eros, ac suscipit neque. Phasellus sollicitudin libero a odio dignissim scelerisque. Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui.
 </p>
@@ -164,16 +169,22 @@
 	<ol>
 		<li>This is a list item in an ordered list</li>
 		<li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
-		<li>
-			Lists can be nested inside of each other
+		<li>Lists can be nested inside of each other
 			<ol>
 				<li>This is a nested list item</li>
 				<li>This is another nested list item in an ordered list</li>
+				<li>This is a parent of another nested list
+					<ol>
+						<li>This is a nested list item</li>
+						<li>This is a nested list item</li>
+					</ol>
+				</li>
 			</ol>
 		</li>
 		<li>This is the last list item</li>
 	</ol>
 </div>
+
 
 <p>Donec posuere fringilla nunc, vitae venenatis diam scelerisque vel. Nullam vitae mauris magna. Mauris et diam quis justo volutpat tincidunt congue nec magna. Curabitur vitae orci elit. Ut mollis massa id magna vestibulum consequat. Proin rutrum lectus justo, sit amet tincidunt est. Vivamus vitae lacinia risus.
 </p>
@@ -193,7 +204,8 @@
 
 &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Aliquam erat volutpat.&lt;&#x2F;a&gt; Mauris vulputate scelerisque feugiat. Cras a erat a diam venenatis aliquam. Sed tempus, purus ac pretium varius, risus orci sagittis purus, quis auctor libero magna nec magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas eros dolor, rutrum eu sollicitudin eu, commodo at leo. Suspendisse potenti. Sed eu nibh sit amet quam auctor feugiat vel et risus. Maecenas eu urna adipiscing neque dictum mollis suscipit in augue. Praesent pulvinar condimentum sagittis. Maecenas laoreet neque non eros consectetur fringilla. Donec vitae risus leo, vitae pharetra ipsum. Sed placerat eros eget elit iaculis semper. Aliquam congue blandit orci ac pretium.&lt;&#x2F;p&gt;
 
-&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_16x9.png&quot; alt&#x3D;&quot;16x9 Image&quot; &#x2F;&gt; 
+&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_16x9.png&quot; alt&#x3D;&quot;16x9 Image&quot; width&#x3D;&quot;100%&quot; &#x2F;&gt;
+ 
 
 &lt;p&gt;Aliquam ultrices cursus mauris, eget volutpat justo mattis nec. Sed a orci turpis. Aliquam aliquet placerat dui, consectetur tincidunt leo tristique et. Vivamus enim nisi, blandit a venenatis quis, convallis et arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris libero sapien, placerat in sodales eu, tempor quis dui. Vivamus egestas faucibus pulvinar. Maecenas eget diam nunc. Phasellus at sem eros, ac suscipit neque. Phasellus sollicitudin libero a odio dignissim scelerisque. Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui.
 &lt;&#x2F;p&gt;
@@ -225,16 +237,22 @@
 	&lt;ol&gt;
 		&lt;li&gt;This is a list item in an ordered list&lt;&#x2F;li&gt;
 		&lt;li&gt;An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.&lt;&#x2F;li&gt;
-		&lt;li&gt;
-			Lists can be nested inside of each other
+		&lt;li&gt;Lists can be nested inside of each other
 			&lt;ol&gt;
 				&lt;li&gt;This is a nested list item&lt;&#x2F;li&gt;
 				&lt;li&gt;This is another nested list item in an ordered list&lt;&#x2F;li&gt;
+				&lt;li&gt;This is a parent of another nested list
+					&lt;ol&gt;
+						&lt;li&gt;This is a nested list item&lt;&#x2F;li&gt;
+						&lt;li&gt;This is a nested list item&lt;&#x2F;li&gt;
+					&lt;&#x2F;ol&gt;
+				&lt;&#x2F;li&gt;
 			&lt;&#x2F;ol&gt;
 		&lt;&#x2F;li&gt;
 		&lt;li&gt;This is the last list item&lt;&#x2F;li&gt;
 	&lt;&#x2F;ol&gt;
 &lt;&#x2F;div&gt;
+
 
 &lt;p&gt;Donec posuere fringilla nunc, vitae venenatis diam scelerisque vel. Nullam vitae mauris magna. Mauris et diam quis justo volutpat tincidunt congue nec magna. Curabitur vitae orci elit. Ut mollis massa id magna vestibulum consequat. Proin rutrum lectus justo, sit amet tincidunt est. Vivamus vitae lacinia risus.
 &lt;&#x2F;p&gt;
@@ -280,23 +298,8 @@
 		<ul class="comment-list">
 			<li class="comment-container">
 	<div class="comment-meta">
-		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;arch" alt="Avatar" />
-		<h4 class="comment-name"><a href="#">Fergus Althuis</a></h4>
-	</div>
-	<div class="comment-text">
-		<p>Beats all you&#39;ve ever saw, been in trouble with the law since the day they was born. Straight&#39;nin&#39; the curve, flat&#39;nin&#39; the hills. Someday the mountain might get &#39;em, but the law never will. Makin&#39; their way, the only way they know how, that&#39;s just a little bit more than the law will allow. Just good ol&#39; boys, wouldn&#39;t change if they could, fightin&#39; the system like a true modern day Robin Hood.</p>
-	</div>
-</li><li class="comment-container">
-	<div class="comment-meta">
-		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;animals" alt="Avatar" />
-		<h4 class="comment-name"><a href="#">Duane Wilms</a></h4>
-	</div>
-	<div class="comment-text">
-		<p>Fanny pack ullamco et veniam semiotics. Shoreditch PBR reprehenderit cliche, magna Tonx aesthetic. Narwhal photo booth DIY aute post-ironic anim. Vice cliche brunch est before they sold out fap, street art Odd Future fashion axe messenger bag nihil Tonx tattooed. Nihil hashtag incididunt, do eu art party Banksy jean shorts four loko typewriter.</p>
-	</div>
-</li><li class="comment-container">
-	<div class="comment-meta">
-		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any" alt="Avatar" />
+		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any" alt="Avatar" width="100" />
+
 		<h4 class="comment-name"><a href="#">Bertil Aaij</a></h4>
 	</div>
 	<div class="comment-text">
@@ -304,19 +307,39 @@
 	</div>
 </li><li class="comment-container">
 	<div class="comment-meta">
-		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar" />
-		<h4 class="comment-name"><a href="#">Frans Keegan</a></h4>
+		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;sepia" alt="Avatar" width="100" />
+
+		<h4 class="comment-name"><a href="#">Jacobus Sneiders</a></h4>
 	</div>
 	<div class="comment-text">
-		<p>Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.</p>
+		<p>I find your lack of faith disturbing. A tremor in the Force. The last time I felt it was in the presence of my old master. Don&#39;t act so surprised, Your Highness. You weren&#39;t on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. The plans you refer to will soon be back in our hands.</p>
 	</div>
 </li><li class="comment-container">
 	<div class="comment-meta">
-		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;sepia" alt="Avatar" />
-		<h4 class="comment-name"><a href="#">Matthias Macguinness</a></h4>
+		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;nature" alt="Avatar" width="100" />
+
+		<h4 class="comment-name"><a href="#">Siguror Hanigan</a></h4>
 	</div>
 	<div class="comment-text">
-		<p>Sugar plum wafer soufflé ice cream. Wafer topping biscuit pie gummi bears topping. Gummies toffee powder applicake oat cake cookie. Bear claw candy tootsie roll fruitcake danish applicake candy canes macaroon. Liquorice tiramisu danish cotton candy gummies. Tiramisu dessert gummi bears macaroon sweet roll jelly-o gummi bears marzipan.</p>
+		<p>Mung bean squash sorrel taro coriander collard greens gumbo bitterleaf tomato. Taro water chestnut celtuce turnip yarrow celery endive scallion black-eyed pea onion. Aubergine dulse turnip greens mustard salsify garlic soybean parsley bitterleaf desert raisin courgette.</p>
+	</div>
+</li><li class="comment-container">
+	<div class="comment-meta">
+		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;arch" alt="Avatar" width="100" />
+
+		<h4 class="comment-name"><a href="#">Fergus Althuis</a></h4>
+	</div>
+	<div class="comment-text">
+		<p>Beats all you&#39;ve ever saw, been in trouble with the law since the day they was born. Straight&#39;nin&#39; the curve, flat&#39;nin&#39; the hills. Someday the mountain might get &#39;em, but the law never will. Makin&#39; their way, the only way they know how, that&#39;s just a little bit more than the law will allow. Just good ol&#39; boys, wouldn&#39;t change if they could, fightin&#39; the system like a true modern day Robin Hood.</p>
+	</div>
+</li><li class="comment-container">
+	<div class="comment-meta">
+		<img src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar" width="100" />
+
+		<h4 class="comment-name"><a href="#">Freyr Hines</a></h4>
+	</div>
+	<div class="comment-text">
+		<p>Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.</p>
 	</div>
 </li>
 		</ul>
@@ -361,23 +384,8 @@
 		&lt;ul class&#x3D;&quot;comment-list&quot;&gt;
 			&lt;li class&#x3D;&quot;comment-container&quot;&gt;
 	&lt;div class&#x3D;&quot;comment-meta&quot;&gt;
-		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;arch&quot; alt&#x3D;&quot;Avatar&quot; &#x2F;&gt;
-		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Fergus Althuis&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
-	&lt;&#x2F;div&gt;
-	&lt;div class&#x3D;&quot;comment-text&quot;&gt;
-		&lt;p&gt;Beats all you&amp;#39;ve ever saw, been in trouble with the law since the day they was born. Straight&amp;#39;nin&amp;#39; the curve, flat&amp;#39;nin&amp;#39; the hills. Someday the mountain might get &amp;#39;em, but the law never will. Makin&amp;#39; their way, the only way they know how, that&amp;#39;s just a little bit more than the law will allow. Just good ol&amp;#39; boys, wouldn&amp;#39;t change if they could, fightin&amp;#39; the system like a true modern day Robin Hood.&lt;&#x2F;p&gt;
-	&lt;&#x2F;div&gt;
-&lt;&#x2F;li&gt;&lt;li class&#x3D;&quot;comment-container&quot;&gt;
-	&lt;div class&#x3D;&quot;comment-meta&quot;&gt;
-		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;animals&quot; alt&#x3D;&quot;Avatar&quot; &#x2F;&gt;
-		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Duane Wilms&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
-	&lt;&#x2F;div&gt;
-	&lt;div class&#x3D;&quot;comment-text&quot;&gt;
-		&lt;p&gt;Fanny pack ullamco et veniam semiotics. Shoreditch PBR reprehenderit cliche, magna Tonx aesthetic. Narwhal photo booth DIY aute post-ironic anim. Vice cliche brunch est before they sold out fap, street art Odd Future fashion axe messenger bag nihil Tonx tattooed. Nihil hashtag incididunt, do eu art party Banksy jean shorts four loko typewriter.&lt;&#x2F;p&gt;
-	&lt;&#x2F;div&gt;
-&lt;&#x2F;li&gt;&lt;li class&#x3D;&quot;comment-container&quot;&gt;
-	&lt;div class&#x3D;&quot;comment-meta&quot;&gt;
-		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;any&quot; alt&#x3D;&quot;Avatar&quot; &#x2F;&gt;
+		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;any&quot; alt&#x3D;&quot;Avatar&quot; width&#x3D;&quot;100&quot; &#x2F;&gt;
+
 		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Bertil Aaij&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
 	&lt;&#x2F;div&gt;
 	&lt;div class&#x3D;&quot;comment-text&quot;&gt;
@@ -385,19 +393,39 @@
 	&lt;&#x2F;div&gt;
 &lt;&#x2F;li&gt;&lt;li class&#x3D;&quot;comment-container&quot;&gt;
 	&lt;div class&#x3D;&quot;comment-meta&quot;&gt;
-		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;people&amp;#x2F;grayscale&quot; alt&#x3D;&quot;Avatar&quot; &#x2F;&gt;
-		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Frans Keegan&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;any&amp;#x2F;sepia&quot; alt&#x3D;&quot;Avatar&quot; width&#x3D;&quot;100&quot; &#x2F;&gt;
+
+		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Jacobus Sneiders&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
 	&lt;&#x2F;div&gt;
 	&lt;div class&#x3D;&quot;comment-text&quot;&gt;
-		&lt;p&gt;Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.&lt;&#x2F;p&gt;
+		&lt;p&gt;I find your lack of faith disturbing. A tremor in the Force. The last time I felt it was in the presence of my old master. Don&amp;#39;t act so surprised, Your Highness. You weren&amp;#39;t on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. The plans you refer to will soon be back in our hands.&lt;&#x2F;p&gt;
 	&lt;&#x2F;div&gt;
 &lt;&#x2F;li&gt;&lt;li class&#x3D;&quot;comment-container&quot;&gt;
 	&lt;div class&#x3D;&quot;comment-meta&quot;&gt;
-		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;tech&amp;#x2F;sepia&quot; alt&#x3D;&quot;Avatar&quot; &#x2F;&gt;
-		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Matthias Macguinness&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;nature&quot; alt&#x3D;&quot;Avatar&quot; width&#x3D;&quot;100&quot; &#x2F;&gt;
+
+		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Siguror Hanigan&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
 	&lt;&#x2F;div&gt;
 	&lt;div class&#x3D;&quot;comment-text&quot;&gt;
-		&lt;p&gt;Sugar plum wafer soufflé ice cream. Wafer topping biscuit pie gummi bears topping. Gummies toffee powder applicake oat cake cookie. Bear claw candy tootsie roll fruitcake danish applicake candy canes macaroon. Liquorice tiramisu danish cotton candy gummies. Tiramisu dessert gummi bears macaroon sweet roll jelly-o gummi bears marzipan.&lt;&#x2F;p&gt;
+		&lt;p&gt;Mung bean squash sorrel taro coriander collard greens gumbo bitterleaf tomato. Taro water chestnut celtuce turnip yarrow celery endive scallion black-eyed pea onion. Aubergine dulse turnip greens mustard salsify garlic soybean parsley bitterleaf desert raisin courgette.&lt;&#x2F;p&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;&lt;li class&#x3D;&quot;comment-container&quot;&gt;
+	&lt;div class&#x3D;&quot;comment-meta&quot;&gt;
+		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;arch&quot; alt&#x3D;&quot;Avatar&quot; width&#x3D;&quot;100&quot; &#x2F;&gt;
+
+		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Fergus Althuis&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+	&lt;&#x2F;div&gt;
+	&lt;div class&#x3D;&quot;comment-text&quot;&gt;
+		&lt;p&gt;Beats all you&amp;#39;ve ever saw, been in trouble with the law since the day they was born. Straight&amp;#39;nin&amp;#39; the curve, flat&amp;#39;nin&amp;#39; the hills. Someday the mountain might get &amp;#39;em, but the law never will. Makin&amp;#39; their way, the only way they know how, that&amp;#39;s just a little bit more than the law will allow. Just good ol&amp;#39; boys, wouldn&amp;#39;t change if they could, fightin&amp;#39; the system like a true modern day Robin Hood.&lt;&#x2F;p&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;&lt;li class&#x3D;&quot;comment-container&quot;&gt;
+	&lt;div class&#x3D;&quot;comment-meta&quot;&gt;
+		&lt;img src&#x3D;&quot;http:&amp;#x2F;&amp;#x2F;placeimg.com&amp;#x2F;100&amp;#x2F;100&amp;#x2F;any&amp;#x2F;grayscale&quot; alt&#x3D;&quot;Avatar&quot; width&#x3D;&quot;100&quot; &#x2F;&gt;
+
+		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Freyr Hines&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+	&lt;&#x2F;div&gt;
+	&lt;div class&#x3D;&quot;comment-text&quot;&gt;
+		&lt;p&gt;Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.&lt;&#x2F;p&gt;
 	&lt;&#x2F;div&gt;
 &lt;&#x2F;li&gt;
 		&lt;&#x2F;ul&gt;
@@ -426,7 +454,8 @@
 		<ul class="comment-list">
 				<li class="comment-container">
 	<div class="comment-meta">
-<img src="..&#x2F;..&#x2F;images&#x2F;fpo_avatar.png" alt="Avatar" />		<h4 class="comment-name"><a href="#">Lacy Way</a></h4>
+<img src="..&#x2F;..&#x2F;images&#x2F;avatar.svg" alt="Avatar" width="100" />
+		<h4 class="comment-name"><a href="#">Lacy Way</a></h4>
 	</div>
 	<div class="comment-text">
 		<p>We are all in the gutter, but some of us are looking at the stars.</p>
@@ -434,7 +463,8 @@
 </li>
         <li class="comment-container">
 	<div class="comment-meta">
-<img src="..&#x2F;..&#x2F;images&#x2F;fpo_avatar.png" alt="Avatar" />		<h4 class="comment-name"><a href="#">Lacy Way</a></h4>
+<img src="..&#x2F;..&#x2F;images&#x2F;avatar.svg" alt="Avatar" width="100" />
+		<h4 class="comment-name"><a href="#">Lacy Way</a></h4>
 	</div>
 	<div class="comment-text">
 		<p>A life is like a garden. Perfect moments can be had, but not preserved, except in memory.</p>
@@ -454,7 +484,8 @@
 		&lt;ul class&#x3D;&quot;comment-list&quot;&gt;
 				&lt;li class&#x3D;&quot;comment-container&quot;&gt;
 	&lt;div class&#x3D;&quot;comment-meta&quot;&gt;
-&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_avatar.png&quot; alt&#x3D;&quot;Avatar&quot; &#x2F;&gt;		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Lacy Way&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;avatar.svg&quot; alt&#x3D;&quot;Avatar&quot; width&#x3D;&quot;100&quot; &#x2F;&gt;
+		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Lacy Way&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
 	&lt;&#x2F;div&gt;
 	&lt;div class&#x3D;&quot;comment-text&quot;&gt;
 		&lt;p&gt;We are all in the gutter, but some of us are looking at the stars.&lt;&#x2F;p&gt;
@@ -462,7 +493,8 @@
 &lt;&#x2F;li&gt;
         &lt;li class&#x3D;&quot;comment-container&quot;&gt;
 	&lt;div class&#x3D;&quot;comment-meta&quot;&gt;
-&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_avatar.png&quot; alt&#x3D;&quot;Avatar&quot; &#x2F;&gt;		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Lacy Way&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;avatar.svg&quot; alt&#x3D;&quot;Avatar&quot; width&#x3D;&quot;100&quot; &#x2F;&gt;
+		&lt;h4 class&#x3D;&quot;comment-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Lacy Way&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
 	&lt;&#x2F;div&gt;
 	&lt;div class&#x3D;&quot;comment-text&quot;&gt;
 		&lt;p&gt;A life is like a garden. Perfect moments can be had, but not preserved, except in memory.&lt;&#x2F;p&gt;
@@ -482,46 +514,60 @@
             <div class="sg-pattern-body">
               <div class="carousel-list-carousel">
 	<div class="carousel-container">
-		<div class="block block-inset">
+		<div class="block block-hero">
+	<div class="b-thumb">
     <a href="#" class="inner">
-		<div class="b-thumb">
-			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_4x3.png" alt="4x3 Image" /> 
-		</div>
-		<div class="b-text">
-			<h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
-		</div>
-	</a>
-</div> 
-	<div>
+			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_16x9.png" alt="16x9 Image" width="100%" />
+
+      <div class="b-text">
+        <h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button class="btn">CTA</button>
+      </div>
+    </a>
+	</div>
+</div>
+
+	</div>
 	<div class="carousel-controls">
 		<a href="#" class="carousel-prev">&larr;</a>
-		<div class="carousel-pagination">1/5</div>
+		<!-- <div class="carousel-pagination">1/5</div> -->
 		<a href="#" class="carousel-next">&rarr;</a>
 	</div>
 </div>
+
               <div class="sg-code" style="display: none">
                 <h3 class="sg-code-head">HTML</h3>
                 <pre class="sg-code-html">
                   <code>
                     &lt;div class&#x3D;&quot;carousel-list-carousel&quot;&gt;
 	&lt;div class&#x3D;&quot;carousel-container&quot;&gt;
-		&lt;div class&#x3D;&quot;block block-inset&quot;&gt;
+		&lt;div class&#x3D;&quot;block block-hero&quot;&gt;
+	&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
     &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;inner&quot;&gt;
-		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
-			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_4x3.png&quot; alt&#x3D;&quot;4x3 Image&quot; &#x2F;&gt; 
-		&lt;&#x2F;div&gt;
-		&lt;div class&#x3D;&quot;b-text&quot;&gt;
-			&lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
-		&lt;&#x2F;div&gt;
-	&lt;&#x2F;a&gt;
-&lt;&#x2F;div&gt; 
-	&lt;div&gt;
+			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_16x9.png&quot; alt&#x3D;&quot;16x9 Image&quot; width&#x3D;&quot;100%&quot; &#x2F;&gt;
+
+      &lt;div class&#x3D;&quot;b-text&quot;&gt;
+        &lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
+        &lt;p class&#x3D;&quot;lead&quot;&gt;
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        &lt;&#x2F;p&gt;
+        &lt;button class&#x3D;&quot;btn&quot;&gt;CTA&lt;&#x2F;button&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;a&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+	&lt;&#x2F;div&gt;
 	&lt;div class&#x3D;&quot;carousel-controls&quot;&gt;
 		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;carousel-prev&quot;&gt;&amp;larr;&lt;&#x2F;a&gt;
-		&lt;div class&#x3D;&quot;carousel-pagination&quot;&gt;1&#x2F;5&lt;&#x2F;div&gt;
+		&lt;!-- &lt;div class&#x3D;&quot;carousel-pagination&quot;&gt;1&#x2F;5&lt;&#x2F;div&gt; --&gt;
 		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;carousel-next&quot;&gt;&amp;rarr;&lt;&#x2F;a&gt;
 	&lt;&#x2F;div&gt;
 &lt;&#x2F;div&gt;
+
                   </code>
                 </pre>
               </div>
@@ -535,59 +581,64 @@
 	<ul class="post-list">
 		<li><div class="block block-thumb">
     <a href="#" class="b-inner">
-		<div class="b-thumb">
-			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		</div>
-		<div class="b-text">
-			<h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</div>
-	</a>
-</div></li>
+  		<div class="b-thumb">
+  			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+        <div class="b-text">
+          <p>Lorem ipsum dolor sit (37 characters)</p>
+          <h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
+        </div>
+  		</div>
+  	</a>
+</div>
+</li>
 		<li><div class="block block-thumb">
     <a href="#" class="b-inner">
-		<div class="b-thumb">
-			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		</div>
-		<div class="b-text">
-			<h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</div>
-	</a>
-</div></li>
+  		<div class="b-thumb">
+  			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+        <div class="b-text">
+          <p>Lorem ipsum dolor sit (37 characters)</p>
+          <h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
+        </div>
+  		</div>
+  	</a>
+</div>
+</li>
 		<li><div class="block block-thumb">
     <a href="#" class="b-inner">
-		<div class="b-thumb">
-			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		</div>
-		<div class="b-text">
-			<h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</div>
-	</a>
-</div></li>
+  		<div class="b-thumb">
+  			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+        <div class="b-text">
+          <p>Lorem ipsum dolor sit (37 characters)</p>
+          <h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
+        </div>
+  		</div>
+  	</a>
+</div>
+</li>
 		<li><div class="block block-thumb">
     <a href="#" class="b-inner">
-		<div class="b-thumb">
-			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		</div>
-		<div class="b-text">
-			<h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</div>
-	</a>
-</div></li>
+  		<div class="b-thumb">
+  			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+        <div class="b-text">
+          <p>Lorem ipsum dolor sit (37 characters)</p>
+          <h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
+        </div>
+  		</div>
+  	</a>
+</div>
+</li>
 		<li><div class="block block-thumb">
     <a href="#" class="b-inner">
-		<div class="b-thumb">
-			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		</div>
-		<div class="b-text">
-			<h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</div>
-	</a>
-</div></li>
+  		<div class="b-thumb">
+  			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+        <div class="b-text">
+          <p>Lorem ipsum dolor sit (37 characters)</p>
+          <h2 class="headline">Lorem ipsum dolor sit (37 characters)</h2>
+        </div>
+  		</div>
+  	</a>
+</div>
+</li>
 	</ul>
 	<a href="#" class="text-btn">View more posts</a>
 </section>
@@ -600,59 +651,64 @@
 	&lt;ul class&#x3D;&quot;post-list&quot;&gt;
 		&lt;li&gt;&lt;div class&#x3D;&quot;block block-thumb&quot;&gt;
     &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;b-inner&quot;&gt;
-		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
-			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
-		&lt;&#x2F;div&gt;
-		&lt;div class&#x3D;&quot;b-text&quot;&gt;
-			&lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
-			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;&#x2F;p&gt;
-		&lt;&#x2F;div&gt;
-	&lt;&#x2F;a&gt;
-&lt;&#x2F;div&gt;&lt;&#x2F;li&gt;
+  		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
+  			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
+        &lt;div class&#x3D;&quot;b-text&quot;&gt;
+          &lt;p&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;p&gt;
+          &lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
+        &lt;&#x2F;div&gt;
+  		&lt;&#x2F;div&gt;
+  	&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;
 		&lt;li&gt;&lt;div class&#x3D;&quot;block block-thumb&quot;&gt;
     &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;b-inner&quot;&gt;
-		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
-			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
-		&lt;&#x2F;div&gt;
-		&lt;div class&#x3D;&quot;b-text&quot;&gt;
-			&lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
-			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;&#x2F;p&gt;
-		&lt;&#x2F;div&gt;
-	&lt;&#x2F;a&gt;
-&lt;&#x2F;div&gt;&lt;&#x2F;li&gt;
+  		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
+  			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
+        &lt;div class&#x3D;&quot;b-text&quot;&gt;
+          &lt;p&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;p&gt;
+          &lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
+        &lt;&#x2F;div&gt;
+  		&lt;&#x2F;div&gt;
+  	&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;
 		&lt;li&gt;&lt;div class&#x3D;&quot;block block-thumb&quot;&gt;
     &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;b-inner&quot;&gt;
-		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
-			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
-		&lt;&#x2F;div&gt;
-		&lt;div class&#x3D;&quot;b-text&quot;&gt;
-			&lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
-			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;&#x2F;p&gt;
-		&lt;&#x2F;div&gt;
-	&lt;&#x2F;a&gt;
-&lt;&#x2F;div&gt;&lt;&#x2F;li&gt;
+  		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
+  			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
+        &lt;div class&#x3D;&quot;b-text&quot;&gt;
+          &lt;p&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;p&gt;
+          &lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
+        &lt;&#x2F;div&gt;
+  		&lt;&#x2F;div&gt;
+  	&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;
 		&lt;li&gt;&lt;div class&#x3D;&quot;block block-thumb&quot;&gt;
     &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;b-inner&quot;&gt;
-		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
-			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
-		&lt;&#x2F;div&gt;
-		&lt;div class&#x3D;&quot;b-text&quot;&gt;
-			&lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
-			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;&#x2F;p&gt;
-		&lt;&#x2F;div&gt;
-	&lt;&#x2F;a&gt;
-&lt;&#x2F;div&gt;&lt;&#x2F;li&gt;
+  		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
+  			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
+        &lt;div class&#x3D;&quot;b-text&quot;&gt;
+          &lt;p&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;p&gt;
+          &lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
+        &lt;&#x2F;div&gt;
+  		&lt;&#x2F;div&gt;
+  	&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;
 		&lt;li&gt;&lt;div class&#x3D;&quot;block block-thumb&quot;&gt;
     &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;b-inner&quot;&gt;
-		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
-			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
-		&lt;&#x2F;div&gt;
-		&lt;div class&#x3D;&quot;b-text&quot;&gt;
-			&lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
-			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;&#x2F;p&gt;
-		&lt;&#x2F;div&gt;
-	&lt;&#x2F;a&gt;
-&lt;&#x2F;div&gt;&lt;&#x2F;li&gt;
+  		&lt;div class&#x3D;&quot;b-thumb&quot;&gt;
+  			&lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;fpo_square.png&quot; alt&#x3D;&quot;Square Thumbnail&quot; &#x2F;&gt;
+        &lt;div class&#x3D;&quot;b-text&quot;&gt;
+          &lt;p&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;p&gt;
+          &lt;h2 class&#x3D;&quot;headline&quot;&gt;Lorem ipsum dolor sit (37 characters)&lt;&#x2F;h2&gt;
+        &lt;&#x2F;div&gt;
+  		&lt;&#x2F;div&gt;
+  	&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;li&gt;
 	&lt;&#x2F;ul&gt;
 	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;text-btn&quot;&gt;View more posts&lt;&#x2F;a&gt;
 &lt;&#x2F;section&gt;
