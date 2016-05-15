@@ -212,7 +212,7 @@ h2,.beta{
     font-size:2.25em;    /* 36px */
     line-height:1.2;      /* 43.2px */
 }
-h3,.gamma{
+h3,.gamma,.lead{
     font-size:28px;
     font-size:1.75rem;  /* 20px */
     line-height:1.2;    /* 33.6px */
@@ -1774,20 +1774,34 @@ ul > li:before {
   right: 0;
 }
 
+.carousel-container h2 {
+  line-height: 2;
+}
+
+.carousel-container .cta {
+  margin-top: 1rem;
+}
+
 /* SCHOOL */
 /*#school section { margin-top: 6rem; }*/
 #school section { margin: 8rem 0; }
 #school section:first-child { margin-top: 4rem; }
 
+section > h2 {
+  padding-top: 2rem;
+}
+
+#school h2,
+#school h3,
+#school h4 { max-width: 100%; }
+
 section h2 {
   text-align: center;
   margin-bottom: 2rem;
-  padding-top: 2rem;
-  max-width: 100%;
 }
 
 /*split*/
-.split .gi { text-align: right; }
+.split .gi { text-align: justify; }
 .split .gi:nth-of-type(even) { text-align: left; }
 
 /*subnav*/
@@ -1796,13 +1810,24 @@ section h2 {
 }
 
 /*glance*/
-.glance .glance-content { margin-top: 2rem; }
+.glance .gi:nth-of-type(odd) { text-align: right; }
+.glance .glance-content {
+  margin-top: 2rem;
+}
+.glance .glance-content .gi {
+  text-align: center;
+}
 
 /*about*/
 .about .tags .gi { text-align: center; }
 
+/*gallery*/
+.gallery { text-align: center; }
+.gallery a { margin: 1rem; }
+
+/*map*/
+.map { text-align: center; }
+.map h4 { margin: 1rem; }
+
 /*uplink*/
-.uplink {
-  display: block;
-  text-align: right;
-}
+.uplink { float: right; }
