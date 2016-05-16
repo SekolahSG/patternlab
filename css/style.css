@@ -212,7 +212,7 @@ h2,.beta{
     font-size:2.25em;    /* 36px */
     line-height:1.2;      /* 43.2px */
 }
-h3,.gamma{
+h3,.gamma,.lead{
     font-size:28px;
     font-size:1.75rem;  /* 20px */
     line-height:1.2;    /* 33.6px */
@@ -1774,20 +1774,50 @@ ul > li:before {
   right: 0;
 }
 
+.carousel-container h2 {
+  line-height: 2;
+}
+
+.carousel-container .cta {
+  margin-top: 1rem;
+}
+
 /* SCHOOL */
 /*#school section { margin-top: 6rem; }*/
-#school section { margin: 8rem 0; }
+#school section {
+  margin: 8rem 0;
+  text-align: center;
+}
 #school section:first-child { margin-top: 4rem; }
 
-section h2 {
+section > h2 {
+  padding-top: 2rem;
+}
+
+#school h2,
+#school h3,
+#school h4 { max-width: 100%; }
+
+section > h2 {
   text-align: center;
   margin-bottom: 2rem;
-  padding-top: 2rem;
-  max-width: 100%;
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+section > h2:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 7px solid #F22613;
 }
 
 /*split*/
-.split .gi { text-align: right; }
+.split .gi { text-align: justify; }
 .split .gi:nth-of-type(even) { text-align: left; }
 
 /*subnav*/
@@ -1796,13 +1826,27 @@ section h2 {
 }
 
 /*glance*/
+.glance .gi:nth-of-type(odd) { text-align: right; }
 .glance .glance-content { margin-top: 2rem; }
+.glance .glance-content .g-3up .gi { text-align: center; }
+/*.glance .glance-content h4 { line-height: 1.5; }*/
+/*.glance-content h4, */
+.glance-content img {
+  margin: 0 auto 0.5rem;
+}
+
 
 /*about*/
 .about .tags .gi { text-align: center; }
+.about p { text-align: left; }
+
+/*gallery*/
+.gallery { text-align: center; }
+.gallery a { margin: 1rem; }
+
+/*map*/
+.map { text-align: center; }
+.map h4 { margin: 1rem; }
 
 /*uplink*/
-.uplink {
-  display: block;
-  text-align: right;
-}
+.uplink { float: right; }
