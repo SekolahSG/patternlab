@@ -217,10 +217,15 @@ h3,.gamma,.lead{
     font-size:1.75rem;  /* 20px */
     line-height:1.2;    /* 33.6px */
 }
-h4,.delta{
+h4,.delta,.category{
     font-size:18px;
     font-size:1.125rem; /* 18px */
     line-height:1.2;  /* 21.6px */
+}
+.category {
+  text-transform: uppercase;
+  font-family: "neuzeit-grotesk", "futura", sans-serif;
+  letter-spacing: 2px;
 }
 h5,.epsilon{
     font-size:16px;
@@ -946,15 +951,17 @@ td {
 .footer {
   clear: both;
   overflow: hidden;
-  background: #131313;
-  color: white;
+  background: transparent;
   line-height: 1.2;
+  border-top: 10px solid #F22613;
 }
 .footer .lc, .footer .header, .footer [role=main] {
   padding: 1rem 1rem 0;
 }
-.footer a {
-  color: #f9f9f9;
+.footer p {
+  font-family: "neuzeit-grotesk", "futura", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .nav-footer {
@@ -975,7 +982,7 @@ td {
 }
 
 @media all and (min-width: 46.8em) {
-  .copyright {
+  .nav-footer {
     float: right;
   }
 }
@@ -984,28 +991,6 @@ td {
     $LIST Styles
 \*------------------------------------*/
 /* General List Styling */
-
-
-/*ul ul, ol ol {
-  margin-bottom: 0;
-}
-ul li, ol li {
-  counter-increment: step-counter;
-  padding: 0 0 10px 0;
-}
-ul > li:before, ol > li:before {
-  margin-right: 5px;
-  font-weight: bold;
-}
-ol > li:before {
-  content: counter(step-counter, decimal-leading-zero) ".";
-  color: red;
-}
-ul > li:before {
-  content: "";
-  margin-right: 30px;
-}*/
-
 .text ul, .text ol {
   margin: 0;
   padding: 0;
@@ -1424,7 +1409,7 @@ ul > li:before {
   }
   .block-hero .b-text {
     position: absolute;
-    bottom: 35%;
+    top: 35%;
     left: 0;
     width: 100%;
     color: white;
@@ -1447,6 +1432,25 @@ ul > li:before {
 .block-thumb .b-thumb {
   position: relative;
 }
+.article-thumb {
+  text-align: left;
+}
+.article-thumb .caption, .article-thumb time {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-family: "neuzeit-grotesk",sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.article-thumb img, .article-thumb .category, .article-thumb h3.headline {
+  margin-bottom: 1rem;
+}
+.article-thumb .b-text .category, .article-thumb .b-text .headline { margin-bottom: 0.5rem; }
+.article-thumb .b-text a {
+  font-size: 18px;
+}
+
 @media all and (min-width: 29.75em) {
   .block-thumb .b-thumb {
     display: table-cell;
@@ -1566,6 +1570,12 @@ ul > li:before {
 }
 .text-list li {
   margin-bottom: 1rem;
+}
+
+/* No Bullet List */
+.no-bullet-list {
+  list-style: none;
+  text-align: left;
 }
 
 .tooltip-container {
@@ -1778,13 +1788,29 @@ ul > li:before {
   line-height: 2;
 }
 
+.carousel-container h3 {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-controls a {
+  display: inline-block;
+  background: url(../images/avatar.svg) no-repeat 50% 50%;
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+}
+
 .carousel-container .cta {
   margin-top: 1rem;
 }
 
 /* SCHOOL */
 /*#school section { margin-top: 6rem; }*/
-#school section { margin: 8rem 0; }
+#school section {
+  margin: 8rem 0;
+  text-align: center;
+}
 #school section:first-child { margin-top: 4rem; }
 
 section > h2 {
@@ -1792,11 +1818,27 @@ section > h2 {
 }
 
 #school h2,
-#school h3,
 #school h4 { max-width: 100%; }
 
-section h2 {
+section > h2 {
   text-align: center;
+  margin-bottom: 2rem;
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+section > h2:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 7px solid #F22613;
+}
+
+section .headline {
   margin-bottom: 2rem;
 }
 
@@ -1811,12 +1853,19 @@ section h2 {
 
 /*glance*/
 .glance .gi:nth-of-type(odd) { text-align: right; }
-.glance .glance-content {
-  margin-top: 2rem;
+.glance .glance-content { margin-top: 2rem; }
+.glance .glance-content .g-3up .gi { text-align: center; }
+.glance .glance-content h4 { line-height: 2.5; }
+/*.glance-content h4,*/
+.glance-content img { margin: 0 auto 0.5rem; }
+.glance-content li { width: 100%; }
+.glance-content span {
+  float: right;
+  font-weight: bold;
 }
-.glance .glance-content .gi {
-  text-align: center;
-}
+.glance-content iframe { float: right; }
+.glance-content .glance-calendar h3 { padding-left: 25px; }
+
 
 /*about*/
 .about .tags .gi { text-align: center; }
