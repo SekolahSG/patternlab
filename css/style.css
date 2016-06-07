@@ -1837,12 +1837,11 @@ td {
 .page h2,
 .page h4 { max-width: 100%; }
 
+.page .gi { text-align: justify; }
+
 /* SCHOOL */
 /*#school section { margin-top: 6rem; }*/
-
-/*split*/
-.split .gi { text-align: justify; }
-.split .gi:nth-of-type(even) { text-align: left; }
+#school .gi:nth-of-type(even) { text-align: left; }
 
 /*subnav*/
 .subnav .gi {
@@ -1885,7 +1884,11 @@ td {
   text-align: center;
 }
 
-.relevant_school img {
+.relevant-school img {
   margin: 0 auto 0.5rem;
   /*Make this rules a component*/
 }
+
+.vendor-contact .contact-details { text-align: center; }
+.vendor-contact .contact-details h2 { text-align: left; }
+.vendor-contact .contact-details img { margin: 2rem 0; }
